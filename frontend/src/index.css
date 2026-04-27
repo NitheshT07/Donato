@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-indigo: #4f46e5;
+  --color-indigo-soft: #eef2ff;
+  --color-emerald: #059669;
+  --color-emerald-soft: #ecfdf5;
+  --color-amber: #d97706;
+  --color-amber-soft: #fffbeb;
+  --color-slate: #64748b;
+  --color-surface-50: #f8fafc;
+  --color-surface-100: #f1f5f9;
+  --color-surface-200: #e2e8f0;
+}
+
+@layer base {
+  body {
+    @apply bg-[#f8fafc] text-slate-900 antialiased selection:bg-indigo-500/10;
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Outfit', sans-serif;
+    @apply tracking-tight font-bold;
+  }
+}
+
+@layer utilities {
+  .pro-card {
+    @apply bg-white border border-slate-200/60 shadow-sm transition-all duration-200;
+    border-radius: 16px;
+  }
+
+  .pro-card-hover {
+    @apply hover:shadow-md hover:border-slate-300/60 transition-all duration-200;
+  }
+
+  .btn-pro {
+    @apply px-5 py-2.5 rounded-xl font-semibold transition-all duration-200 flex items-center gap-2 text-sm;
+  }
+
+  .btn-pro-primary {
+    @apply bg-indigo-600 text-white hover:bg-indigo-700 shadow-sm active:scale-[0.98];
+  }
+
+  .btn-pro-outline {
+    @apply bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 active:scale-[0.98];
+  }
+
+  .dashboard-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+  }
+
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 text-slate-600 hover:bg-slate-100 font-medium text-sm;
+  }
+
+  .sidebar-link-active {
+    @apply bg-indigo-50 text-indigo-600 font-semibold;
+  }
+}
