@@ -10,3 +10,5 @@ tensorflow-cpu
 numpy
 Pillow
 certifi
+python-multipart
+dnspython
