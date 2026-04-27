@@ -6,7 +6,7 @@ python-jose[cryptography]
 passlib[bcrypt]
 python-dotenv
 requests
-tensorflow
+tensorflow-cpu
 numpy
 Pillow
 certifi
