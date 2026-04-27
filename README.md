@@ -1,11 +1,10 @@
+# Donato
+A production-ready React frontend for managing food donations, redistribution to NGOs, and composting through farms, powered by AI freshness detection.
 
-  # AI Food Redistribution Platform
+## Running the code
 
-  This is a code bundle for AI Food Redistribution Platform. The original project is available at https://www.figma.com/design/YUGz2b38zoRRUOLVdMORjW/AI-Food-Redistribution-Platform.
+1. Run `npm i` to install the dependencies.
+2. Run `npm run dev` to start the development server.
 
-  ## Running the code
-
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
-  
+---
+Original project design: [Figma Link](https://www.figma.com/design/YUGz2b38zoRRUOLVdMORjW/AI-Food-Redistribution-Platform)
